@@ -11,7 +11,6 @@ function handleClickCard(target) {
   selectItemContainer.appendChild(li);
 
   const price = target.childNodes[3].children[2].innerText.split(" ")[0];
-  console.log(price);
 
   totalPrice = parseFloat(totalPrice) + parseFloat(price);
   document.getElementById("total-price").innerText = totalPrice;
@@ -29,10 +28,6 @@ function calculateTotal(){
   
   const applyBtn = document.getElementById('btn-apply')
   const inputField = inputFieldCoupon.value;
-
- 
-
-  
  
   if(inputField === "SELL200" && totalPrice >= 200) {
     
@@ -46,12 +41,15 @@ function calculateTotal(){
     const total = totalPrice - discountTotal;
     const totalAmount = total.toFixed(2)
     document.getElementById('total').innerText = totalAmount;
-    
-    
+     
   }else{
-    alert (" invalid ");
+    alert ("Please Over 200 tk & valid Use Promo Code ");
   }
-  
-  
+  inputFieldCoupon.value = "";
 }
+
+document.getElementById('page-reload').addEventListener('click', function() {
+  location.href = "/";
+   
+})
 

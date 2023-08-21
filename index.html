@@ -170,17 +170,16 @@
             <button id="myButton" disabled  onclick="my_modal_1.showModal()" class=" px-4 py-2 hover:bg-gradient-to-r from-orange-400 to-[#E527B2] rounded bg-[#E527B2] text-white">make Purchase</button>
             
             <dialog id="my_modal_1" class="modal">
-              <form method="dialog" class="modal-box text-center space-y-4">
+              <form method="dialog" class="modal-box text-center space-y-2">
                 <div  class="justify-center ">
-                  <img class="w-36 m-auto" src="./images/congo.png" alt="">
+                  <img class="w-32 m-auto" src="./images/congo.png" alt="">
                 </div>
                 
                 <h3 class="font-extrabold text-4xl">Congratulations</h3>
                 <h5 class="text-xl text-slate-400">Your Purchase the product</h5>
                 
                 <div class="modal-action justify-center">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="text-white bg-[#E527B2] rounded mx-4 px-3 py-2">Go Home</button>
+                  <button id="page-reload" class="text-white bg-[#E527B2] rounded mx-4 px-3 py-2">Go Home</button>
                 </div>
               </form>
             </dialog>
@@ -194,16 +193,3 @@
     <script src="./price-calculator.js"></script>
   </body>
 </html>
-
-<!-- Open the modal using ID.showModal() method -->
-<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
-<dialog id="my_modal_1" class="modal">
-  <form method="dialog" class="modal-box">
-    <h3 class="font-bold text-lg">Hello!</h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
-    <div class="modal-action">
-      
-      <button class="btn">Close</button>
-    </div>
-  </form>
-</dialog> -->
