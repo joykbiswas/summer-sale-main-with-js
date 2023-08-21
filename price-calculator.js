@@ -5,7 +5,7 @@ function handleClickCard(target) {
   const selectItemContainer = document.getElementById("selected-item");
   const button = document.getElementById("myButton");
   const itemName = target.childNodes[3].children[1].innerText;
-
+  
   const li = document.createElement("li");
   li.innerText = itemName;
   selectItemContainer.appendChild(li);
@@ -21,7 +21,6 @@ function handleClickCard(target) {
  return totalPrice;
   
 }
-
 
 function calculateTotal(){
   const inputFieldCoupon = document.getElementById('input-field');
